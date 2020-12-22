@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./App.css";
+import "../components/Movie.css";
 
 function Movie({ year, title, summary, poster, genres }) {
     return <div className="movie">
@@ -14,7 +14,7 @@ function Movie({ year, title, summary, poster, genres }) {
                         {genre}
                     </li>
                 ))}</ul>
-            <p className="movie_summary">{summary}</p>
+            <p className="movie_summary">{summary.slice(0.140)}...</p>
             
         </div>
     </div >;
