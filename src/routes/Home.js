@@ -26,7 +26,7 @@ class Home extends React.Component {
     render() {
         const { isLoading, movies } = this.state;
         return (
-            <selection className="container">
+            <selection >
                 {isLoading ?
                     (
                         <div className="loader">
